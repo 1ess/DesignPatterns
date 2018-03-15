@@ -13,30 +13,28 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) WeatherData *wd;
+@property (nonatomic, strong) CurrentConditionDisplay *cd;
+@property (nonatomic, strong) ForecastDisplay *fd;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    WeatherData *wd = [[WeatherData alloc] init];
-    CurrentConditionDisplay *cd = [[CurrentConditionDisplay alloc] init];
-    ForecastDisplay *fd = [[ForecastDisplay alloc] init];
-    [wd addObserver:self forKeyPath:@"t" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
-    [wd addObserver:fd forKeyPath:@"t" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    self.wd = [[WeatherData alloc] init];
+    self.cd = [[CurrentConditionDisplay alloc] init];
+    self.fd = [[ForecastDisplay alloc] init];
+    [self.wd addObserver:self.cd forKeyPath:@"t" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    [self.wd addObserver:self.fd forKeyPath:@"t" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:2 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        [wd measurementsChanged];
+        [self.wd measurementsChanged];
     }];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    NSLog(@"%@", change);
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)dealloc {
+    [self.wd removeObserver:self.cd forKeyPath:@"t"];
+    [self.wd removeObserver:self.fd forKeyPath:@"t"];
 }
 
 

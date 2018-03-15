@@ -8,6 +8,7 @@
 
 #import "WeatherData.h"
 @interface WeatherData()
+
 @property (nonatomic, assign) CGFloat t;
 @property (nonatomic, assign) CGFloat h;
 @property (nonatomic, assign) CGFloat p;
@@ -25,7 +26,8 @@
 }
 
 - (void)measurementsChanged {
-    _t = [self getTemperature];
+    CGFloat t = [self getTemperature];
+    self.t = t;
     _h = [self getHumidity];
     _p = [self getPressure];
     
