@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MFTax.h"
 @interface SalesOrder : NSObject
-@property (nonatomic, strong) id<MFTax> tax;
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
+- (instancetype)initWithTax:(id<MFTax>)tax;
 @end
