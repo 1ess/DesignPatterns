@@ -13,10 +13,6 @@
 <
 Subject
 >
-- (CGFloat)getTemperature;
-- (CGFloat)getHumidity;
-- (CGFloat)getPressure;
-
 - (void)measurementsChanged;
 
 @end
