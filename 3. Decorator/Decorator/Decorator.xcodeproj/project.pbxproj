@@ -13,11 +13,10 @@
 		4A25BA50205B9E6400B43AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A25BA4F205B9E6400B43AE3 /* Assets.xcassets */; };
 		4A25BA53205B9E6500B43AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A25BA51205B9E6500B43AE3 /* LaunchScreen.storyboard */; };
 		4A25BA56205B9E6500B43AE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A25BA55205B9E6500B43AE3 /* main.m */; };
-		4A25BA5E205B9F6F00B43AE3 /* Beverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A25BA5D205B9F6F00B43AE3 /* Beverage.m */; };
-		4A25BA61205B9FD000B43AE3 /* CondimentDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A25BA60205B9FD000B43AE3 /* CondimentDecorator.m */; };
-		4A25BA64205BA00200B43AE3 /* Espresso.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A25BA63205BA00200B43AE3 /* Espresso.m */; };
-		4A25BA67205BA05600B43AE3 /* HouseBlend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A25BA66205BA05600B43AE3 /* HouseBlend.m */; };
-		4A25BA6A205BA0A200B43AE3 /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A25BA69205BA0A200B43AE3 /* Mocha.m */; };
+		5ED89F0F205FE9BD00556F0D /* ChickenBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED89F0E205FE9BD00556F0D /* ChickenBurger.m */; };
+		5ED89F12205FEA0400556F0D /* Condiment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED89F11205FEA0400556F0D /* Condiment.m */; };
+		5ED89F15205FEA3800556F0D /* Chilli.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED89F14205FEA3800556F0D /* Chilli.m */; };
+		5ED89F1B205FEBCF00556F0D /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED89F1A205FEBCF00556F0D /* Egg.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,16 +30,15 @@
 		4A25BA52205B9E6500B43AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A25BA54205B9E6500B43AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A25BA55205B9E6500B43AE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4A25BA5C205B9F6F00B43AE3 /* Beverage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beverage.h; sourceTree = "<group>"; };
-		4A25BA5D205B9F6F00B43AE3 /* Beverage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Beverage.m; sourceTree = "<group>"; };
-		4A25BA5F205B9FD000B43AE3 /* CondimentDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CondimentDecorator.h; sourceTree = "<group>"; };
-		4A25BA60205B9FD000B43AE3 /* CondimentDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CondimentDecorator.m; sourceTree = "<group>"; };
-		4A25BA62205BA00200B43AE3 /* Espresso.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Espresso.h; sourceTree = "<group>"; };
-		4A25BA63205BA00200B43AE3 /* Espresso.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Espresso.m; sourceTree = "<group>"; };
-		4A25BA65205BA05600B43AE3 /* HouseBlend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HouseBlend.h; sourceTree = "<group>"; };
-		4A25BA66205BA05600B43AE3 /* HouseBlend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseBlend.m; sourceTree = "<group>"; };
-		4A25BA68205BA0A200B43AE3 /* Mocha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mocha.h; sourceTree = "<group>"; };
-		4A25BA69205BA0A200B43AE3 /* Mocha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mocha.m; sourceTree = "<group>"; };
+		5ED89F0C205FE97700556F0D /* Humburger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Humburger.h; sourceTree = "<group>"; };
+		5ED89F0D205FE9BD00556F0D /* ChickenBurger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChickenBurger.h; sourceTree = "<group>"; };
+		5ED89F0E205FE9BD00556F0D /* ChickenBurger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChickenBurger.m; sourceTree = "<group>"; };
+		5ED89F10205FEA0400556F0D /* Condiment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Condiment.h; sourceTree = "<group>"; };
+		5ED89F11205FEA0400556F0D /* Condiment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Condiment.m; sourceTree = "<group>"; };
+		5ED89F13205FEA3800556F0D /* Chilli.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chilli.h; sourceTree = "<group>"; };
+		5ED89F14205FEA3800556F0D /* Chilli.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chilli.m; sourceTree = "<group>"; };
+		5ED89F19205FEBCF00556F0D /* Egg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
+		5ED89F1A205FEBCF00556F0D /* Egg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Egg.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,16 +75,15 @@
 				4A25BA47205B9E6400B43AE3 /* AppDelegate.m */,
 				4A25BA49205B9E6400B43AE3 /* ViewController.h */,
 				4A25BA4A205B9E6400B43AE3 /* ViewController.m */,
-				4A25BA5C205B9F6F00B43AE3 /* Beverage.h */,
-				4A25BA5D205B9F6F00B43AE3 /* Beverage.m */,
-				4A25BA5F205B9FD000B43AE3 /* CondimentDecorator.h */,
-				4A25BA60205B9FD000B43AE3 /* CondimentDecorator.m */,
-				4A25BA62205BA00200B43AE3 /* Espresso.h */,
-				4A25BA63205BA00200B43AE3 /* Espresso.m */,
-				4A25BA65205BA05600B43AE3 /* HouseBlend.h */,
-				4A25BA66205BA05600B43AE3 /* HouseBlend.m */,
-				4A25BA68205BA0A200B43AE3 /* Mocha.h */,
-				4A25BA69205BA0A200B43AE3 /* Mocha.m */,
+				5ED89F0C205FE97700556F0D /* Humburger.h */,
+				5ED89F0D205FE9BD00556F0D /* ChickenBurger.h */,
+				5ED89F0E205FE9BD00556F0D /* ChickenBurger.m */,
+				5ED89F10205FEA0400556F0D /* Condiment.h */,
+				5ED89F11205FEA0400556F0D /* Condiment.m */,
+				5ED89F13205FEA3800556F0D /* Chilli.h */,
+				5ED89F14205FEA3800556F0D /* Chilli.m */,
+				5ED89F19205FEBCF00556F0D /* Egg.h */,
+				5ED89F1A205FEBCF00556F0D /* Egg.m */,
 				4A25BA4C205B9E6400B43AE3 /* Main.storyboard */,
 				4A25BA4F205B9E6400B43AE3 /* Assets.xcassets */,
 				4A25BA51205B9E6500B43AE3 /* LaunchScreen.storyboard */,
@@ -168,12 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A25BA4B205B9E6400B43AE3 /* ViewController.m in Sources */,
-				4A25BA64205BA00200B43AE3 /* Espresso.m in Sources */,
-				4A25BA6A205BA0A200B43AE3 /* Mocha.m in Sources */,
+				5ED89F12205FEA0400556F0D /* Condiment.m in Sources */,
+				5ED89F15205FEA3800556F0D /* Chilli.m in Sources */,
 				4A25BA56205B9E6500B43AE3 /* main.m in Sources */,
-				4A25BA61205B9FD000B43AE3 /* CondimentDecorator.m in Sources */,
-				4A25BA5E205B9F6F00B43AE3 /* Beverage.m in Sources */,
-				4A25BA67205BA05600B43AE3 /* HouseBlend.m in Sources */,
+				5ED89F0F205FE9BD00556F0D /* ChickenBurger.m in Sources */,
+				5ED89F1B205FEBCF00556F0D /* Egg.m in Sources */,
 				4A25BA48205B9E6400B43AE3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

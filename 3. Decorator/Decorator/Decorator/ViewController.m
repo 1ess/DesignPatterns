@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "Espresso.h"
-#import "Mocha.h"
+#import "ChickenBurger.h"
+#import "Chilli.h"
+#import "Egg.h"
 @interface ViewController ()
 
 @end
@@ -18,13 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Espresso *esp = [[Espresso alloc] init];
-    NSLog(@"%@ -- %@", esp.Description, @([esp cost]));
-    Mocha *mo1 = [[Mocha alloc] initWithBeverage:esp];
-    NSLog(@"%@ -- %@", mo1.Description, @([mo1 cost]));
-    Mocha *mo2 = [[Mocha alloc] initWithBeverage:mo1];
-    NSLog(@"%@ -- %@", mo2.Description, @([mo2 cost]));
-    
+    ChickenBurger *chickBurger = [[ChickenBurger alloc] init];
+    Egg *egg = [[Egg alloc] initWithHumburger:chickBurger];
+    Chilli *chilli = [[Chilli alloc] initWithHumburger:egg];
+    NSLog(@"%@", [chilli desc]);
+    NSLog(@"%@", @([chilli cost]));
     
 }
 
