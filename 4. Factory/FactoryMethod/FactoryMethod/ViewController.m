@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //这个factory依照定义，应该是抽象父类，这里只是习惯用协议了。
     id<SplitterFactory> factory = [[VideoSplitterFactory alloc] init];
     id<Splitter> split = [factory createSplitter];
     [split split];
