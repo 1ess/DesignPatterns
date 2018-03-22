@@ -7,16 +7,19 @@
 //
 
 #import "ViewController.h"
-
+#import "CNTaxBase.h"
+#import "USTaxBase.h"
+#import "DETaxBase.h"
 @interface ViewController ()
-
+@property (nonatomic, strong) id<MFTax> tax;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.tax = [[CNTaxBase alloc] init];
+    [self.tax calculateTax];
 }
 
 
