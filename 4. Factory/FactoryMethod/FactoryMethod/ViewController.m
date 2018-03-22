@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "VideoSplitterFactory.h"
 #import "PictureSplitterFactory.h"
-#import "Splitter.h"
 @interface ViewController ()
 
 @end
